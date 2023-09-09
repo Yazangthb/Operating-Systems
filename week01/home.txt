@@ -1,0 +1,19 @@
+total 72
+drwxr-xr-x 2 vboxuser vboxuser 4096 сен  6 15:21 Videos
+drwxr-xr-x 2 vboxuser vboxuser 4096 сен  6 15:21 Templates
+drwxr-xr-x 2 vboxuser vboxuser 4096 сен  6 15:21 Public
+drwxr-xr-x 2 vboxuser vboxuser 4096 сен  6 15:21 Pictures
+drwxr-xr-x 2 vboxuser vboxuser 4096 сен  6 15:21 Music
+drwxr-xr-x 2 vboxuser vboxuser 4096 сен  6 15:21 Documents
+drwx------ 5 vboxuser vboxuser 4096 сен  6 15:28 snap
+-rw-rw-r-- 1 vboxuser vboxuser   29 сен  8 21:35 namelist.sorted
+-rw-rw-r-- 1 vboxuser vboxuser  117 сен  8 21:47 list.txt
+-rw-rw-r-- 1 vboxuser vboxuser  338 сен  8 22:09 output.txt
+drwxrwxr-x 2 vboxuser vboxuser 4096 сен  8 22:29 yazan
+drwxr-xr-x 3 vboxuser vboxuser 4096 сен  9 15:06 Desktop
+drwxr-xr-x 2 vboxuser vboxuser 4096 сен  9 15:21 Downloads
+drwxrwxr-x 2 vboxuser vboxuser 4096 сен  9 15:30 week01
+-rw-rw-r-- 1 vboxuser vboxuser  261 сен  9 15:42 ex3.sh
+drwxrwxr-x 4 vboxuser vboxuser 4096 сен  9 15:42 working
+drwxrwxr-x 2 vboxuser vboxuser 4096 сен  9 15:43 folder_root
+drwxrwxr-x 2 vboxuser vboxuser 4096 сен  9 15:43 folder_home

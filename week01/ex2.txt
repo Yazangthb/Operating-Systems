@@ -1,0 +1,182 @@
+    1  find /proc -type f name "*task"
+    2  find /proc -type f name "*task*"
+    3  find /proc -type f -name "*task*"
+    4  find /proc -type f -name "*task*" > output.txt
+    5  sudo find /proc -type f -name "*task*" > output.txt
+    6  sudo visudo
+    7  man sudo
+    8  echo "John" > namelist
+    9  cd "/home/vboxuser"
+   10  echo "jojn" > namelist
+   11  nano namelist
+   12  sort -r namelist > namelist.sorted
+   13  nano namelist.sorted
+   14  cat namelist.sorted
+   15  whoami
+   16  hostname
+   17  man man
+   18  man whoami
+   19  whoami -h
+   20  whoami --help
+   21  less
+   22  less namelist
+   23  head namelist
+   24  tail namelist
+   25  man -h head
+   26  man head
+   27  grep PATTERN namelist
+   28  grep khalid namelist
+   29  cat namelist
+   30  grep Khalid namelist
+   31  nano namelist
+   32  grep k namelist
+   33  nano namelist
+   34  grep namelist
+   35  grep k namelist
+   36  cat namelist
+   37  head -n 3 < namelist
+   38  ls
+   39  ls | sort -r | tail -n 2
+   40  ls | sort -r | tail -n 4
+   41  ls > list.txt
+   42  cat list.txt
+   43  '
+   44  d
+   45  d
+   46  ddddddddd
+   47  ''
+   48  '
+   49  `
+   50  find /proc -type f -name "*task*" > output.txt 2> errors.txt
+   51  cat errors.txt
+   52  cat output.txt
+   53  sort -o output.txt output.txt
+   54  sort -o error.txt error.txt
+   55  sort -o errors.txt errors.txt
+   56  head -n 3 output.txt
+   57  head -n errors.txt
+   58  head -n 3 errors.txt
+   59  pwd
+   60  mkdir yazan
+   61  cd yazan
+   62  cd ..
+   63  rm -r yazan
+   64  cd yazan
+   65  rm errors.txt
+   66  cat errors.txt
+   67  cat output.txt
+   68  ls
+   69  mkdir yazan 
+   70  mv namelist.sorted /yazan/namelist.sorted
+   71  mv ~/namelist ~/yazan/namelist
+   72  ls
+   73  cd yazan
+   74  ls
+   75  cat namelist
+   76  gedit namelist
+   77  cd ~
+   78  ls .
+   79  ls
+   80  ls ..
+   81  cd yazan
+   82  ls .
+   83  ls ..
+   84  touch test.txt
+   85  ls
+   86  cat > test2.txt
+   87  gedit test3.txt
+   88  echo test4.txt
+   89  ls
+   90  echo > test4.txt
+   91  ls
+   92  cat > test3.txt
+   93  ls
+   94  cat test3.txt
+   95  ma test3.txt newtest3.txt
+   96  mv test3.txt newtest3.txt
+   97  ls
+   98  nano > notes 
+   99  nano notes
+  100  nano notes &
+  101  fg
+  102  fg1
+  103  fg 1
+  104  nano notes &
+  105  fg 1
+  106  fg 3
+  107  nano notes &
+  108  fg 1
+  109  nano notes &
+  110  fg
+  111  gedit notes.txt
+  112  jons
+  113  jobs
+  114  gedit notes.txt
+  115  jobs
+  116  kill 1
+  117  nano notes &
+  118  fg
+  119  gedit notes.txt &
+  120  jobs
+  121  cat notes > notes.txt
+  122  fg %2
+  123  jobs 
+  124  kill %1
+  125  sdf
+  126  kill %1
+  127  kill 
+  128  mkdir ~/week01
+  129  cd ~/week01\
+  130  ls -1 /usr/bin/*gcc* | sort -r | head -n 5 >~/week01/ex1.txt
+  131  cat ex1..txt
+  132  cat ex1.txt
+  133  chmod +x ex1.sh
+  134  sudo chmod +x ex1.sh
+  135  visudo
+  136  sudo visudo
+  137  su
+  138  reboot
+  139  sudo apt update
+  140  mkdir ~/week01
+  141  cd ~/week01
+  142  cd .
+  143  cd ..
+  144  rm week01
+  145  rm -r week01
+  146  mkdir ~/week01
+  147  cd ~/week01
+  148  ls -1 /user/bin/*gcc* | sort -r | head -n 5 > ~/week01/ex1.txt
+  149  ls -1 /usr/bin/*gcc* | sort -r | head -n 5 > ~/week01/ex1.txt
+  150  rm -r week01
+  151  mkdir ~/week01
+  152  cd ~/week01
+  153  ls -1 /usr/bin/*gcc* | sort -r | head -n 5 > ~/week01/ex1.txt
+  154  sudo chmod +x ex1.sh
+  155  ls
+  156  nano ex1.sh
+  157  chmod +x ex1.sh
+  158  ls
+  159  nano ex1.sh
+  160  ls
+  161  chmod +x ex1.sh
+  162  cat ex1.sh
+  163  cat > ex1.sh
+  164  bash ex1.sh
+  165  ex1.sh
+  166  ./ex1.sh
+  167  bash ex1.sh
+  168  bash ~/week01/ex1.sh
+  169  sudo chmod +x ex1.sh
+  170  ./ex1.sh
+  171  ls
+  172  mkdir week01
+  173  rm -r week01
+  174  ./ex1.sh
+  175  cd working
+  176  ./ex1.sh
+  177  cd .
+  178  cd ..
+  179  ./ex3.sh
+  180  bash ex3.sh
+  181  history
+  182  history > ~/week01/ex2.txt

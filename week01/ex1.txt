@@ -1,0 +1,5 @@
+/usr/bin/gcc-ar
+/usr/bin/gcc-11
+/usr/bin/gcc
+/usr/bin/c99-gcc
+/usr/bin/c89-gcc
