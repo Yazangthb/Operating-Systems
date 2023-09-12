@@ -1,1 +1,4 @@
-history > ~/week01/ex2.txt
+touch ex2.txt
+ls
+echo "Hello"
+history > ex2.txt
