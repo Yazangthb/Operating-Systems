@@ -3,8 +3,15 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+
 int main(int argc, char *argv[]) {
-int n = argc;
+    if (argc != 2) {
+        printf("Usage: %s <n>\n", argv[0]);
+        return 1;
+    }
+
+    int n = atoi(argv[1]);
+
     for (int i = 0; i < n; i++) {
         pid_t pid = fork();
 
@@ -21,6 +28,7 @@ int n = argc;
         }
     }
 
+    
     return 0;
 }
 
