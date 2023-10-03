@@ -1,0 +1,2 @@
+In this experiment we will have 2^n processes overall in our program 
+In n=3 we will have 8 processes and  in n=5 we will have 32 processes
