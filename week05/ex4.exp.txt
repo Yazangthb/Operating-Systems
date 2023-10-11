@@ -1,0 +1,3 @@
+Here we see the same approximately as in ex3 
+So when we increasee the number of threads the time of the program will decrease unitl a certain limit where the time for the threads to communicate becoms large
+But in this approach we see that we arrive to this limit faster which shows that it is more efficient
