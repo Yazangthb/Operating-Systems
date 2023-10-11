@@ -1,0 +1,6 @@
+m_value execution_time
+1 0m7,263s
+2 0m4,745s
+4 0m2,999s
+10 0m2,686s
+100 0m3,356s

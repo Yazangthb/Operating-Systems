@@ -1,0 +1,2 @@
+We can see that the number of sseconds it takes the program to finish decraeases when we increase the number of threads until a certain limit 
+Where when we increase the numbers of the threads too much the time for them to communicate is making the program longer so somtimes a smaller number of threads is a better option
