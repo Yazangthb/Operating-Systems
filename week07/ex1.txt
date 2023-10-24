@@ -1,0 +1,11 @@
+Algorithm: First Fit
+Throughput: 127.44
+
+Algorithm: Best Fit
+Throughput: 39.02
+
+Algorithm: Worst Fit
+Throughput: 38.30
+
+
+We can see that the number of queries in the first fit is the highest then comes best fit and worst fit which are usually close to each other

@@ -1,0 +1,4 @@
+allocate 1001 512
+allocate 2002 256
+clear 1001
+end
