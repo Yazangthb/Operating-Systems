@@ -1,0 +1,5 @@
+Swap-out is a technique for moving a process from RAM to the hard disc.
+Swap-in is a method of transferring a program from a hard disc to main memory, or RAM
+We can see in the exercise that if the value is 10 MB si and so are not changing much
+when increasing to 1000 MB si and so change their values
+and the SWPD starts to increase because there will be more data in the hard disk
