@@ -16,16 +16,15 @@ char path[PATH_MAX];
 void find_all_hlinks(const char *source)
 {
     struct stat file_stat;
-    if (stat(source, &file_stat) == -1)
+    if (lstat(source, &file_stat) == -1)
     {
-        perror("lstat1");
+        perror("lstat");
         exit(EXIT_FAILURE);
     }
 
     // Print inode, path, and content of the source file
     printf("Source File: %s\n", source);
     printf("Inode: %ld\n", (long)file_stat.st_ino);
-
     // Open the watched directory
     DIR *dir = opendir(path);
     if (dir == NULL)
@@ -38,10 +37,9 @@ void find_all_hlinks(const char *source)
     while ((entry = readdir(dir)) != NULL)
     {
         struct stat entry_stat;
-        if (stat(entry->d_name, &entry_stat) == -1)
+        if (lstat(entry->d_name, &entry_stat) == -1)
         {
-        continue;
-            perror("lstat2");
+            perror("lstat");
             exit(EXIT_FAILURE);
         }
 
@@ -61,9 +59,9 @@ void find_all_hlinks(const char *source)
 void unlink_all(const char *source)
 {
     struct stat file_stat;
-    if (stat(source, &file_stat) == -1)
+    if (lstat(source, &file_stat) == -1)
     {
-        perror("lstat3");
+        perror("lstat");
         exit(EXIT_FAILURE);
     }
 
@@ -80,10 +78,9 @@ void unlink_all(const char *source)
     while ((entry = readdir(dir)) != NULL)
     {
         struct stat entry_stat;
-        if (stat(entry->d_name, &entry_stat) == -1)
+        if (lstat(entry->d_name, &entry_stat) == -1)
         {
-        continue;
-            perror("lstat4");
+            perror("lstat");
             exit(EXIT_FAILURE);
         }
 
@@ -133,11 +130,11 @@ void sigint_handler(int signum)
     while ((entry = readdir(dir)) != NULL)
     {
         struct stat entry_stat;
-        if (stat(entry->d_name, &entry_stat) == -1)
+        if (lstat(entry->d_name, &entry_stat) == -1)
         {
-            perror("lstat5");
+            perror("lstat");
             exit(EXIT_FAILURE);
-        } 
+        }
 
         printf("Stat Info: %s - Inode: %ld\n", entry->d_name, (long)entry_stat.st_ino);
     }
@@ -163,7 +160,7 @@ int main(int argc, char *argv[])
     printf("%s\n", full);
     // Creating file myfile1.txt with content "Hello world."
     FILE *file1 = fopen(full, "w");
-    if (file1 == NULL)	
+    if (file1 == NULL)
     {
         perror("fopen");
         exit(EXIT_FAILURE);
@@ -186,7 +183,7 @@ int main(int argc, char *argv[])
     find_all_hlinks(full);
 
     // Moving myfile1.txt to another folder
-    if (rename("/tmp/myfile1.txt",full) == -1)
+    if (rename(full, "/tmp/myfile1.txt") == -1)
     {
         perror("rename");
         exit(EXIT_FAILURE);
