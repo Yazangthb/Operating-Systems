@@ -5,7 +5,7 @@ mkfs -t ext4 lofs.img #Create an ext4 file system on the image file using mkfs.
 sudo rm -r ./lofsdisk #Remove the existing lofsdisk directory if it exists
 mkdir -p ./lofsdisk #create a new directory
 sudo mount -o loop lofs.img ./lofsdisk #Mount the loop device to the lofsdisk directory.
-
+gcc ex1.c -o ex1
 #Create two text files (file11 and file2) with specific content in the lofsdisk directory.
 echo "Yazan" > ./lofsdisk/file11
 echo "Alnakri" > ./lofsdisk/file2
